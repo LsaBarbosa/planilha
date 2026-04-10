@@ -1,0 +1,1 @@
+' modStudyFactory.bas placeholder

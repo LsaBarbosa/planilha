@@ -1,0 +1,1 @@
+' modGlobalConfig.bas placeholder
