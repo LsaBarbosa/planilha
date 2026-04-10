@@ -1,1 +1,3 @@
-' ThisWorkbook.bas placeholder
+Private Sub Workbook_Open()
+    modConfig.OnWorkbookOpen
+End Sub
