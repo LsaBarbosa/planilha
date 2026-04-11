@@ -3,7 +3,7 @@ Option Explicit
 
 Private Const SHAPE_ROUNDED_RECTANGLE As Long = 5
 
-Public Const COLOR_DARK_BLUE As Long = 938727
+Public Const COLOR_DARK_BLUE As Long = &H7B4E22
 Public Const COLOR_LIGHT_BLUE As Long = 15984090
 Public Const COLOR_LIGHT_GRAY As Long = 15132390
 Public Const COLOR_BORDER As Long = 11382189
@@ -87,7 +87,7 @@ Public Sub FormatTitle(ByVal target As Range, ByVal textValue As String)
         .Font.Name = FONT_TITLE
         .Font.Size = FONT_SIZE_TITLE
         .Font.Bold = True
-        .Font.Color = COLOR_DARK_BLUE
+        .Font.Color = RGB(34, 78, 123)
         .HorizontalAlignment = xlLeft
         .VerticalAlignment = xlCenter
     End With
@@ -98,7 +98,7 @@ Public Sub FormatSectionHeader(ByVal rng As Range, ByVal textValue As String)
     rng.Value = textValue
 
     With rng
-        .Interior.Color = COLOR_DARK_BLUE
+        .Interior.Color = RGB(34, 78, 123)
         .Font.Color = COLOR_WHITE
         .Font.Bold = True
         .Font.Size = FONT_SIZE_HEADER
@@ -113,7 +113,7 @@ Public Sub FormatLabelCell(ByVal rng As Range, ByVal textValue As String)
     rng.Value = textValue
 
     With rng
-        .Interior.Color = COLOR_DARK_BLUE
+        .Interior.Color = RGB(34, 78, 123)
         .Font.Color = COLOR_WHITE
         .Font.Bold = True
         .Font.Size = FONT_SIZE_HEADER
@@ -128,7 +128,7 @@ Public Sub FormatInputCell(ByVal rng As Range, Optional ByVal defaultValue As St
     rng.Value = defaultValue
 
     With rng
-        .Interior.Color = COLOR_LIGHT_BLUE
+        .Interior.Color = COLOR_WHITE
         .Font.Color = COLOR_BLACK
         .Font.Bold = False
         .HorizontalAlignment = xlLeft
@@ -156,7 +156,7 @@ End Sub
 
 Public Sub FormatHeaderRow(ByVal rng As Range)
     With rng
-        .Interior.Color = COLOR_DARK_BLUE
+        .Interior.Color = RGB(34, 78, 123)
         .Font.Color = COLOR_WHITE
         .Font.Bold = True
         .HorizontalAlignment = xlCenter
